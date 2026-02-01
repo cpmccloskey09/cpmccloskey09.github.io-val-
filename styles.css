@@ -9,8 +9,8 @@ body{background:linear-gradient(180deg,#fff6f8 0%,#fff1f4 100%);display:flex;ali
 #button-area{display:flex;justify-content:center;gap:12px}
 .choice{cursor:pointer;padding:10px 18px;border-radius:10px;background:#fdeef2;border:1px solid rgba(0,0,0,0.04);user-select:none}
 .choice:active{transform:translateY(1px)}
-#dog{position:absolute;left:50%;top:0%;transform:translate(-50%,-140%) translate(var(--dx,0),var(--dy,0));transition:transform .06s linear;z-index:3;pointer-events:none;transform-origin:center center;width:220px;height:140px}
-#dog-img{width:100%;height:auto;display:block;pointer-events:none}
+#dog{position:absolute;left:50%;top:5%;transform:translate(-50%,-100%) translate(var(--dx,0),var(--dy,0));transition:transform .06s linear;z-index:3;pointer-events:none;transform-origin:center center;width:220px;height:140px}
+#dog svg,#dog-img{width:100%;height:auto;display:block;pointer-events:none}
 #overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45)}
 #overlay[hidden]{display:none}
 #overlay-content{background:#fff;padding:24px;border-radius:12px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,0.2)}
