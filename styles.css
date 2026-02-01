@@ -1,0 +1,22 @@
+/* Minimal styles to make the valentines card presentable */
+:root{--bg:#fff6f8;--card:#fff;--accent:#ff6b8a}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+body{background:linear-gradient(180deg,#fff6f8 0%,#fff1f4 100%);display:flex;align-items:center;justify-content:center}
+#stage{position:relative;width:360px;height:260px}
+#card{position:relative;background:var(--card);padding:20px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,0.12);text-align:center}
+#question{font-size:1.1rem;margin:0 0 12px}
+#button-area{display:flex;justify-content:center;gap:12px}
+.choice{cursor:pointer;padding:10px 18px;border-radius:10px;background:#fdeef2;border:1px solid rgba(0,0,0,0.04);user-select:none}
+.choice:active{transform:translateY(1px)}
+#dog{position:absolute;left:50%;top:5%;transform:translate(-50%,-50%) translate(var(--dx,0),var(--dy,0));transition:transform .06s linear;z-index:3;pointer-events:none;transform-origin:center center;width:220px;height:140px}
+#dog-img{width:100%;height:auto;display:block;pointer-events:none}
+#overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.45)}
+#overlay[hidden]{display:none}
+#overlay-content{background:#fff;padding:24px;border-radius:12px;text-align:center;box-shadow:0 12px 40px rgba(0,0,0,0.2)}
+#hearts{position:fixed;left:0;right:0;bottom:0;top:0;pointer-events:none}
+.heart{position:absolute;font-size:28px;animation:rise 2.6s linear forwards}
+@keyframes rise{0%{opacity:1;transform:translateY(0) scale(1)}100%{opacity:0;transform:translateY(-240px) scale(.6)}}
+
+/* small responsive tweak */
+@media (max-width:420px){#stage{width:320px;height:auto}}

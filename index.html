@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Allison, will you be my valentine?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="stage">
+    <!-- Dachshund image -->
+    <div id="dog" aria-hidden="true">
+      <img id="dog-img" src="images/dog.jpg" alt="Dachshund" />
+    </div>
+
+    <!-- Main card -->
+    <div id="card" role="dialog" aria-label="Valentine question">
+      <p id="question">Will you be my valentine, Allison?</p>
+
+      <div id="button-area">
+        <div id="yes" class="choice" tabindex="0" role="button" aria-pressed="false">Yes</div>
+        <div id="no" class="choice" tabindex="0" role="button" aria-pressed="false">No</div>
+      </div>
+    </div>
+
+    <!-- Overlay after Yes -->
+    <div id="overlay" hidden>
+      <div id="overlay-content">
+        <h1>Yes! ❤️</h1>
+        <p>You're my valentine — thank you, Allison!</p>
+        <button id="restart">Show again</button>
+      </div>
+      <div id="hearts"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
